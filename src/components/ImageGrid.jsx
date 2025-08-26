@@ -104,19 +104,19 @@ const ImageGrid = () => {
       id: 1,
       src: image1,
       alt: 'Darshanss - Birthday Boy',
-      caption: 'The Birthday Star! ⭐'
+      caption: ''
     },
     {
       id: 2,
       src: image2,
       alt: 'Darshanss - Cricket Fan',
-      caption: 'Cricket Enthusiast 🏏'
+      caption: ''
     },
     {
       id: 3,
       src: image3,
       alt: 'Darshanss - Friend',
-      caption: 'Great Friend 👥'
+      caption: ''
     },
   ]
 
