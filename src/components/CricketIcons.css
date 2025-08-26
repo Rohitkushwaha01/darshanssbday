@@ -1,0 +1,519 @@
+.cricket-icons-section {
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #fef9e7 0%, #fdeaa7 100%);
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.csk-accent {
+  color: #f39c12;
+  text-shadow: 2px 2px 4px rgba(243, 156, 18, 0.3);
+}
+
+.section-subtitle {
+  text-align: center;
+  font-size: 1.3rem;
+  color: #7f8c8d;
+  margin-bottom: 3rem;
+  font-style: italic;
+}
+
+/* MS Dhoni Special Section */
+.dhoni-special {
+  margin-bottom: 4rem;
+}
+
+.dhoni-card {
+  background: white;
+  border-radius: 25px;
+  padding: 3rem;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  border: 3px solid #f39c12;
+  position: relative;
+  overflow: hidden;
+}
+
+.dhoni-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: linear-gradient(90deg, #f39c12, #e67e22, #f39c12);
+}
+
+.dhoni-image {
+  flex-shrink: 0;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 5px solid #f39c12;
+  box-shadow: 0 10px 25px rgba(243, 156, 18, 0.3);
+}
+
+.dhoni-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.dhoni-info {
+  flex: 1;
+}
+
+.dhoni-info h3 {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.dhoni-title {
+  font-size: 1.5rem;
+  color: #f39c12;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+
+.dhoni-description {
+  font-size: 1.1rem;
+  color: #7f8c8d;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.dhoni-achievements {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.dhoni-achievements span {
+  background: rgba(243, 156, 18, 0.1);
+  color: #f39c12;
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  border: 2px solid #f39c12;
+}
+
+/* Cricket Icons Grid */
+.cricket-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.cricket-card {
+  background: white;
+  border-radius: 20px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  border: 3px solid transparent;
+}
+
+.cricket-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(243, 156, 18, 0.2);
+  border-color: #f39c12;
+}
+
+.cricket-icon {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  animation: pulse 2s infinite;
+}
+
+.cricket-card h4 {
+  font-size: 1.3rem;
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.cricket-card p {
+  color: #7f8c8d;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* CSK Special Message */
+.csk-message {
+  text-align: center;
+  padding: 3rem;
+  border-radius: 25px;
+  color: white;
+}
+
+.csk-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  margin-bottom: 2rem;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.csk-lion {
+  font-size: 2rem;
+}
+
+.csk-text {
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.csk-message h3 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.csk-message p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .cricket-icons-section {
+    padding: 3rem 1rem;
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+  }
+  
+  .section-subtitle {
+    font-size: 1.1rem;
+  }
+  
+  .dhoni-card {
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem;
+    gap: 2rem;
+  }
+  
+  .dhoni-image {
+    width: 150px;
+    height: 150px;
+  }
+  
+  .dhoni-info h3 {
+    font-size: 2rem;
+  }
+  
+  .dhoni-title {
+    font-size: 1.3rem;
+  }
+  
+  .dhoni-description {
+    font-size: 1rem;
+  }
+  
+  .dhoni-achievements {
+    justify-content: center;
+  }
+  
+  .cricket-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .csk-message {
+    padding: 2rem;
+  }
+  
+  .csk-message h3 {
+    font-size: 2rem;
+  }
+  
+  .csk-message p {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .cricket-icons-section {
+    padding: 2rem 0.5rem;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+  }
+  
+  .section-subtitle {
+    font-size: 1rem;
+  }
+  
+  .dhoni-card {
+    padding: 1.5rem;
+  }
+  
+  .dhoni-image {
+    width: 120px;
+    height: 120px;
+  }
+  
+  .dhoni-info h3 {
+    font-size: 1.8rem;
+  }
+  
+  .cricket-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .cricket-card {
+    padding: 1.5rem;
+  }
+  
+  .csk-message {
+    padding: 1.5rem;
+  }
+  
+  .csk-message h3 {
+    font-size: 1.8rem;
+  }
+  
+  .csk-message p {
+    font-size: 1rem;
+  }
+}
+
+/* Cricket Reel Video Section */
+.cricket-reel-section {
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
+.reel-title {
+  font-family: 'Great Vibes', cursive;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.reel-subtitle {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.2rem;
+  color: #7f8c8d;
+  margin-bottom: 2rem;
+  font-style: italic;
+}
+
+.reel-container {
+  max-width: 400px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.reel-video-wrapper {
+  background: #000;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+  position: relative;
+  aspect-ratio: 9/16;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.video-placeholder {
+  text-align: center;
+  color: white;
+}
+
+.video-icon {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  opacity: 0.7;
+}
+
+.video-placeholder p {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.video-instruction {
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+/* Reel Controls Overlay */
+.reel-controls {
+  position: absolute;
+  right: 15px;
+  bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  z-index: 10;
+}
+
+.reel-action {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3rem;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.reel-action:hover {
+  transform: scale(1.1);
+}
+
+.action-icon {
+  font-size: 1.5rem;
+  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5));
+}
+
+.action-count {
+  color: white;
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+/* Reel Info */
+.reel-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+  padding: 2rem 1rem 1rem;
+  color: white;
+  text-align: left;
+}
+
+.reel-info h4 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+.reel-info p {
+  font-size: 0.9rem;
+  opacity: 0.9;
+  line-height: 1.4;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+/* Responsive Design for Reel */
+@media (max-width: 768px) {
+  .reel-title {
+    font-size: 2rem;
+  }
+  
+  .reel-subtitle {
+    font-size: 1rem;
+  }
+  
+  .reel-container {
+    max-width: 350px;
+  }
+  
+  .reel-controls {
+    right: 10px;
+    bottom: 70px;
+    gap: 1rem;
+  }
+  
+  .action-icon {
+    font-size: 1.3rem;
+  }
+  
+  .action-count {
+    font-size: 0.7rem;
+  }
+  
+  .reel-info {
+    padding: 1.5rem 0.8rem 0.8rem;
+  }
+  
+  .reel-info h4 {
+    font-size: 1rem;
+  }
+  
+  .reel-info p {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .reel-container {
+    max-width: 300px;
+  }
+  
+  .reel-controls {
+    right: 8px;
+    bottom: 60px;
+    gap: 0.8rem;
+  }
+  
+  .action-icon {
+    font-size: 1.2rem;
+  }
+  
+  .action-count {
+    font-size: 0.6rem;
+  }
+  
+  .reel-info {
+    padding: 1.2rem 0.6rem 0.6rem;
+  }
+  
+  .reel-info h4 {
+    font-size: 0.9rem;
+  }
+  
+  .reel-info p {
+    font-size: 0.7rem;
+  }
+}
